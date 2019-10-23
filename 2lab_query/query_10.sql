@@ -1,3 +1,4 @@
+USE Labor_SQL;
 SELECT class, count(name) FROM Ships 
 GROUP BY class HAVING count(name)>2
 UNION

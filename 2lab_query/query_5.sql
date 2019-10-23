@@ -1,3 +1,4 @@
+USE Labor_SQL;
 SELECT class FROM Ships, Outcomes
 WHERE Outcomes.ship = Ships.name AND result='sunk'
 UNION
