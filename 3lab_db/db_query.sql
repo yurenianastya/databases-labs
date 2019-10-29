@@ -1,9 +1,3 @@
--- MySQL Workbench Forward Engineering
-
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
-
 -- -----------------------------------------------------
 -- Schema yurenia_db
 -- -----------------------------------------------------
@@ -33,6 +27,7 @@ CREATE TABLE `yurenia_db`.`country` (
   `id` INT NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `tax` INT NOT NULL,
+  INDEX `tax_INDEX` (`tax` ASC),
   UNIQUE INDEX `name_UNIQUE` (`name` ASC),
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
@@ -497,7 +492,4 @@ INSERT INTO `product`(`id`, `name`, `price`, `quantity`, `business_id`) VALUES
 (8, 'keyboard', 34, 1000, 8),
 (9, 'bottle', 11, 1000, 9),
 (10, 'book', 10, 1000, 10);
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+	

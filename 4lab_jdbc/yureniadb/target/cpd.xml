@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="51" tokens="159">
+      <file line="23"
+            path="/home/nastya/databases/4lab_jdbc/yureniadb/src/main/java/iot/yurenia/passive/model/Product.java"/>
+      <file line="23"
+            path="/home/nastya/databases/4lab_jdbc/yureniadb/src/main/java/iot/yurenia/passive/model/Service.java"/>
+      <codefragment><![CDATA[        public Product(Integer id, String name, Double price,
+                       Integer quantity, Integer businessId) {
+            this.id = id;
+            this.name = name;
+            this.price = price;
+            this.quantity = quantity;
+            this.businessId = businessId;
+        }
+
+        public Integer getId() {
+            return id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public Double getPrice() {
+            return price;
+        }
+
+        public Integer getQuantity() {
+            return quantity;
+        }
+
+        public Integer getBusinessId() {
+            return businessId;
+        }
+
+        public void setId(Integer id) {
+            this.id = id;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setPrice(Double price) {
+            this.price = price;
+        }
+
+        public void setQuantity(Integer quantity) {
+            this.quantity = quantity;
+        }
+
+        public void setBusinessId(Integer businessId) {
+            this.businessId = businessId;
+        }
+
+
+}]]></codefragment>
+   </duplication>
+</pmd-cpd>
