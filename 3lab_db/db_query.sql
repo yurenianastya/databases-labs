@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `bank`;
 -- Table `yurenia_db`.`country`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`country` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `tax` INT NOT NULL,
   INDEX `tax_INDEX` (`tax` ASC),
@@ -37,7 +37,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`customer`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`customer` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `surname` VARCHAR(45) NOT NULL,
   `phone_number` INT(12) NOT NULL,
@@ -58,7 +58,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`transaction`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`transaction` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `transaction_info` VARCHAR(45) NULL,
   `amount` DECIMAL(45) NOT NULL,
   `business_id` INT(45) NOT NULL,
@@ -74,7 +74,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`currency`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`currency` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `transaction_id` INT NOT NULL,
   PRIMARY KEY (`id`),
@@ -91,7 +91,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`private_account`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`private_account` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `account_number` BIGINT NOT NULL,
   `account_balance` DECIMAL(45) NOT NULL,
   `owners_name` VARCHAR(45) NOT NULL,
@@ -125,7 +125,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`business`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`business` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `service` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
@@ -138,7 +138,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`business_account`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`business_account` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `owner_company` VARCHAR(45) NOT NULL,
   `balance` DECIMAL(45) NULL,
   `business_id` INT NOT NULL,
@@ -164,7 +164,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`service`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`service` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `price` DECIMAL(45) NOT NULL,
   `quantity` INT(45) NOT NULL,
@@ -183,7 +183,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`product`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`product` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `price` DECIMAL(45) NOT NULL,
   `quantity` INT(45) NOT NULL,
@@ -202,7 +202,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`bank`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`bank` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `country_id` INT NOT NULL,
   PRIMARY KEY (`id`),
@@ -219,7 +219,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`customer_password`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`customer_password` (
-  `customer_id` INT NOT NULL,
+  `customer_id` INT NOT NULL AUTO_INCREMENT,
   `customer_password` VARCHAR(45) NULL,
   PRIMARY KEY (`customer_id`),
   INDEX `fk_passwords_customer1_idx` (`customer_id` ASC),
@@ -237,7 +237,7 @@ ENGINE = InnoDB;
 CREATE TABLE `yurenia_db`.`country_has_currency` (
   `country_id` INT NOT NULL,
   `currency_id` INT NOT NULL,
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   INDEX `fk_country_has_currency_currency1_idx` (`currency_id` ASC),
   INDEX `fk_country_has_currency_country1_idx` (`country_id` ASC),
@@ -258,7 +258,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`business_password`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`business_password` (
-  `business_id` INT NOT NULL,
+  `business_id` INT NOT NULL AUTO_INCREMENT,
   `business_password` VARCHAR(45) NULL,
   PRIMARY KEY (`business_id`),
   INDEX `fk_business_password_business1_idx` (`business_id` ASC),
@@ -274,7 +274,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`bank_password`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`bank_password` (
-  `bank_id` INT NOT NULL,
+  `bank_id` INT NOT NULL AUTO_INCREMENT,
   `bank_password` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`bank_id`),
   INDEX `fk_bank_password_bank1_idx` (`bank_id` ASC),
@@ -291,7 +291,7 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`bank_has_transaction`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`bank_has_transaction` (
-  `bank_id` INT NOT NULL,
+  `bank_id` INT NOT NULL AUTO_INCREMENT,
   `transaction_id` INT NOT NULL,
   `id` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
