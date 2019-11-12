@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="58" tokens="205">
+      <file line="7"
+            path="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Product.java"/>
+      <file line="7"
+            path="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Service.java"/>
+      <codefragment><![CDATA[public class Product {
+    private int id;
+    private String name;
+    private long price;
+    private int quantity;
+    private int businessId;
+
+    @Id
+    @Column(name = "id", nullable = false)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Basic
+    @Column(name = "name", nullable = false, length = 45)
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Basic
+    @Column(name = "price", nullable = false, precision = 0)
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
+    }
+
+    @Basic
+    @Column(name = "quantity", nullable = false)
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    @Basic
+    @Column(name = "business_id", nullable = false)
+    public int getBusinessId() {
+        return businessId;
+    }
+
+    public void setBusinessId(int businessId) {
+        this.businessId = businessId;
+    }
+
+    public Product() {]]></codefragment>
+   </duplication>
+</pmd-cpd>

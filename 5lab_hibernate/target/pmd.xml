@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.13.0" timestamp="2019-11-12T15:49:37.612">
+<file name="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Bank.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="hibernate.yurenia" class="Bank" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+</file>
+<file name="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Business.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="hibernate.yurenia" class="Business" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+</file>
+<file name="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Country.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="hibernate.yurenia" class="Country" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+</file>
+<file name="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Currency.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="hibernate.yurenia" class="Currency" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+</file>
+<file name="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Customer.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="hibernate.yurenia" class="Customer" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+</file>
+<file name="/home/nastya/databases/5lab_hibernate/src/main/java/hibernate/yurenia/Transaction.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="hibernate.yurenia" class="Transaction" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation>
+</file>
+</pmd>
