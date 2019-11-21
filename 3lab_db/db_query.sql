@@ -93,7 +93,7 @@ ENGINE = InnoDB;
 CREATE TABLE `yurenia_db`.`private_account` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `account_number` BIGINT NOT NULL,
-  `account_balance` DECIMAL(45) NOT NULL,
+  `account_balance` DECIMAL NOT NULL,
   `owners_name` VARCHAR(45) NOT NULL,
   `currency_id` INT NOT NULL,
   `customer_id` INT NOT NULL,
@@ -140,7 +140,7 @@ ENGINE = InnoDB;
 CREATE TABLE `yurenia_db`.`business_account` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `owner_company` VARCHAR(45) NOT NULL,
-  `balance` DECIMAL(45) NULL,
+  `balance` DECIMAL NULL,
   `business_id` INT NOT NULL,
   `currency_id` INT NOT NULL,
   `transaction_id` INT NOT NULL,
@@ -166,8 +166,8 @@ ENGINE = InnoDB;
 CREATE TABLE `yurenia_db`.`service` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `price` DECIMAL(45) NOT NULL,
-  `quantity` INT(45) NOT NULL,
+  `price` DECIMAL NOT NULL,
+  `quantity` INT NOT NULL,
   `business_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_service_business1_idx` (`business_id` ASC),
@@ -185,8 +185,8 @@ ENGINE = InnoDB;
 CREATE TABLE `yurenia_db`.`product` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `price` DECIMAL(45) NOT NULL,
-  `quantity` INT(45) NOT NULL,
+  `price` DECIMAL NOT NULL,
+  `quantity` INT NOT NULL,
   `business_id` INT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_product_business1_idx` (`business_id` ASC),
@@ -220,7 +220,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`customer_password` (
   `customer_id` INT NOT NULL AUTO_INCREMENT,
-  `customer_password` VARCHAR(45) NULL,
+  `customer_password` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`customer_id`),
   INDEX `fk_passwords_customer1_idx` (`customer_id` ASC),
   CONSTRAINT `fk_passwords_customer1`
@@ -235,9 +235,9 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`country_has_currency`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`country_has_currency` (
+  `id` INT NOT NULL AUTO_INCREMENT,
   `country_id` INT NOT NULL,
   `currency_id` INT NOT NULL,
-  `id` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   INDEX `fk_country_has_currency_currency1_idx` (`currency_id` ASC),
   INDEX `fk_country_has_currency_country1_idx` (`country_id` ASC),
@@ -291,9 +291,9 @@ ENGINE = InnoDB;
 -- Table `yurenia_db`.`bank_has_transaction`
 -- -----------------------------------------------------
 CREATE TABLE `yurenia_db`.`bank_has_transaction` (
+  `id` VARCHAR(45) NOT NULL,
   `bank_id` INT NOT NULL AUTO_INCREMENT,
   `transaction_id` INT NOT NULL,
-  `id` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_bank_has_transaction_transaction1_idx` (`transaction_id` ASC),
   INDEX `fk_bank_has_transaction_bank1_idx` (`bank_id` ASC),
