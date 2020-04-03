@@ -13,7 +13,7 @@ public class PrivateAccount {
     @Column(name = "id", nullable = false)
     private Integer id;
     @Column(name = "account_number")
-    private BigDecimal number;
+    private Long number;
     @Column(name = "account_balance")
     private BigDecimal balance;
     @Column(name = "owners_name", length = 45)
@@ -25,7 +25,7 @@ public class PrivateAccount {
     @Column(name = "transaction_id")
     private Integer transactionId;
 
-    public PrivateAccount(BigDecimal number, BigDecimal balance, String name, Integer currencyId, Integer customerId, Integer transactionId) {
+    public PrivateAccount(Long number, BigDecimal balance, String name, Integer currencyId, Integer customerId, Integer transactionId) {
         this.number = number;
         this.balance = balance;
         this.name = name;
@@ -45,11 +45,11 @@ public class PrivateAccount {
         this.id = id;
     }
 
-    public BigDecimal getNumber() {
+    public Long getNumber() {
         return number;
     }
 
-    public void setNumber(BigDecimal number) {
+    public void setNumber(Long number) {
         this.number = number;
     }
 
