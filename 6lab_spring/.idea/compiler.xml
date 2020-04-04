@@ -9,6 +9,9 @@
         <module name="6lab_spring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="6lab_spring" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

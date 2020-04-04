@@ -3,6 +3,7 @@ package iot.spring.domain;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 
 @Entity
 @Table(name = "private_account", schema = "yurenia_db")
