@@ -201,6 +201,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -208,7 +209,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="iot.spring.Application" />
       <module name="6lab_spring" />
@@ -222,9 +223,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -261,29 +286,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1279" height="366" key="GridCell.Tab.0.bottom" timestamp="1585927184103">
+    <state x="368" y="0" key="#Dockerfile" timestamp="1586090764733">
       <screen x="0" y="0" width="1321" height="768" />
     </state>
-    <state width="1279" height="366" key="GridCell.Tab.0.bottom/0.0.1321.768@0.0.1321.768" timestamp="1585927184103" />
-    <state width="1279" height="366" key="GridCell.Tab.0.center" timestamp="1585927184102">
+    <state x="368" y="0" key="#Dockerfile/0.0.1321.768@0.0.1321.768" timestamp="1586090764733" />
+    <state x="368" y="107" key="#docker-compose.yml.db:_Compose_Deployment" timestamp="1586096689224">
       <screen x="0" y="0" width="1321" height="768" />
     </state>
-    <state width="1279" height="366" key="GridCell.Tab.0.center/0.0.1321.768@0.0.1321.768" timestamp="1585927184102" />
-    <state width="1279" height="366" key="GridCell.Tab.0.left" timestamp="1585927184101">
+    <state x="368" y="107" key="#docker-compose.yml.db:_Compose_Deployment/0.0.1321.768@0.0.1321.768" timestamp="1586096689224" />
+    <state width="1279" height="366" key="GridCell.Tab.0.bottom" timestamp="1586101510495">
       <screen x="0" y="0" width="1321" height="768" />
     </state>
-    <state width="1279" height="366" key="GridCell.Tab.0.left/0.0.1321.768@0.0.1321.768" timestamp="1585927184101" />
-    <state width="1279" height="366" key="GridCell.Tab.0.right" timestamp="1585927184102">
+    <state width="1279" height="366" key="GridCell.Tab.0.bottom/0.0.1321.768@0.0.1321.768" timestamp="1586101510495" />
+    <state width="1279" height="366" key="GridCell.Tab.0.center" timestamp="1586101510492">
       <screen x="0" y="0" width="1321" height="768" />
     </state>
-    <state width="1279" height="366" key="GridCell.Tab.0.right/0.0.1321.768@0.0.1321.768" timestamp="1585927184102" />
+    <state width="1279" height="366" key="GridCell.Tab.0.center/0.0.1321.768@0.0.1321.768" timestamp="1586101510492" />
+    <state width="1279" height="366" key="GridCell.Tab.0.left" timestamp="1586101510490">
+      <screen x="0" y="0" width="1321" height="768" />
+    </state>
+    <state width="1279" height="366" key="GridCell.Tab.0.left/0.0.1321.768@0.0.1321.768" timestamp="1586101510490" />
+    <state width="1279" height="366" key="GridCell.Tab.0.right" timestamp="1586101510493">
+      <screen x="0" y="0" width="1321" height="768" />
+    </state>
+    <state width="1279" height="366" key="GridCell.Tab.0.right/0.0.1321.768@0.0.1321.768" timestamp="1586101510493" />
     <state x="169" y="19" key="SettingsEditor" timestamp="1585916541318">
       <screen x="0" y="0" width="1321" height="768" />
     </state>
     <state x="169" y="19" key="SettingsEditor/0.0.1321.768@0.0.1321.768" timestamp="1585916541318" />
-    <state x="341" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1585916470923">
+    <state x="341" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1586104968109">
       <screen x="0" y="0" width="1321" height="768" />
     </state>
-    <state x="341" y="212" key="com.intellij.ide.util.TipDialog/0.0.1321.768@0.0.1321.768" timestamp="1585916470923" />
+    <state x="341" y="212" key="com.intellij.ide.util.TipDialog/0.0.1321.768@0.0.1321.768" timestamp="1586104968109" />
   </component>
 </project>
